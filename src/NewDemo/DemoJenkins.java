@@ -26,8 +26,8 @@ public class DemoJenkins {
 		String title =driver.getTitle();
 		System.out.println(title);
 		Assert.assertEquals(title,"LinkedIn: Log In or Sign Up");
-		driver.findElement(By.xpath(".//*[@id='login-email']")).sendKeys("amit210889@gmail.com");
-		driver.findElement(By.xpath(".//*[@id='login-password']")).sendKeys("amitpal@786");
+		driver.findElement(By.xpath(".//*[@id='login-email']")).sendKeys();
+		driver.findElement(By.xpath(".//*[@id='login-password']")).sendKeys();
 		driver.findElement(By.xpath(".//*[@id='login-submit']")).click();;
 		String IndexPage =driver.getTitle();
 		System.out.println(IndexPage);
